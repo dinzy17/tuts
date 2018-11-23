@@ -3,13 +3,8 @@ var router = express.Router()
 // Using Node.js `require()`
 const mongoose = require('mongoose');
 
-router.get("/dddd",	function(req,res){
-	res.send("Kiran weds omkar")
+router.get("/",	function(req,res){
+	res.send("Hello World")
 })
-
-router.use("/",	function(req,res){
-	res.send("asdhnbashdbhasbdjasbd askdhasbdkabsdbahsbdhb")
-})
-
 
 module.exports = router
