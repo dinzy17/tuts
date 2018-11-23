@@ -1,12 +1,15 @@
 const express = require('express')
 const app = express()
+const fs = require('fs')
 const http = require('http')
 const https = require('https')
 
-var httpsOptions = {
-  key: fs.readFileSync('your_ssl_key_file.key'),
-  cert: fs.readFileSync('your_ssl_crt_file.crt')
-}
+let httpsOptions = { }
+
+// let httpsOptions = {
+//   key: fs.readFileSync('your_ssl_key_file.key'),
+//   cert: fs.readFileSync('your_ssl_crt_file.crt')
+// }
 
 app.get('/', (req, res) => {
   res.send("Hello world")
