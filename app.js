@@ -4,9 +4,9 @@ const fs = require('fs')
 const http = require('http')
 const https = require('https')
 
-let httpsOptions = { }
+const httpsOptions = { }
 
-// let httpsOptions = {
+// const httpsOptions = {
 //   key: fs.readFileSync('your_ssl_key_file.key'),
 //   cert: fs.readFileSync('your_ssl_crt_file.crt')
 // }
