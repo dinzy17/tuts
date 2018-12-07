@@ -17,3 +17,7 @@ const http = require('http')
  const server = http.createServer(app).listen(80, () => {
    console.log('http server running at ' + 80)
  })
+
+ app.get('/', function(req, res){
+	res.send('Hi') 
+ })
